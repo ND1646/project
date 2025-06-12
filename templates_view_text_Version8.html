@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Document Text - {{ filename }}</title>
+    <style>
+        body { background: #111 !important; color: #eee !important; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 700px; margin: 40px auto; background: #181818 !important; color: #eee !important; padding: 20px; border-radius: 8px; }
+        h2 { margin-top: 0; }
+        pre { white-space: pre-wrap; word-break: break-word; background: #232323 !important; color: #eee !important; padding: 18px; border-radius: 4px; border: 1px solid #333 !important;}
+        a { color: #6ab0ff !important; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Text from {{ filename }}</h2>
+        <pre>{{ text }}</pre>
+        <a href="{{ url_for('index') }}">← Back to chat</a>
+    </div>
+</body>
+</html>
